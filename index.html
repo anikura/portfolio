@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aniket Kumar Rai – B.Tech CSAI student at IIIT Delhi. Web Developer, Competitive Programmer, and Open Source enthusiast building clean digital experiences.">
+    <title>Aniket Kumar Rai | Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css?v=1.6">
+</head>
+<body>
+
+    <!-- 1. ENTRY / WELCOME GATE -->
+    <div id="welcome-gate" class="welcome-gate">
+        <div class="welcome-content">
+            <div class="welcome-logo">AKR</div>
+            <h1 class="welcome-title">Welcome to Aniket Kumar Rai's Space</h1>
+            <p class="welcome-subtitle">B.Tech CSAI · IIIT Delhi · Developer &amp; Problem Solver</p>
+            <button class="welcome-btn" id="enter-btn">
+                <span>Enter Space</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- MAIN PORTFOLIO WRAPPER -->
+    <div id="app" class="app-container hidden">
+        
+        <!-- STICKY TOP NAVIGATION -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">
+                    <span class="nav-logo-short">AKR</span>
+                    <span class="nav-logo-full">Aniket Kumar Rai</span>
+                </a>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about" class="nav-link active">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <main>
+            
+            <!-- HERO / ABOUT SECTION -->
+            <section id="about" class="section hero-section scroll-reveal">
+                <div class="container">
+                    <!-- Mobile-only photo -->
+                    <div class="hero-mobile-photo">
+                        <img src="assets/profile.png" alt="Aniket Kumar Rai" class="hero-image">
+                    </div>
+
+                    <div class="hero-top-row">
+                        <!-- Desktop photo -->
+                        <div class="hero-image-wrapper">
+                            <img src="assets/profile.jpg" alt="Aniket Kumar Rai" class="hero-image">
+                        </div>
+                        <!-- Content -->
+                        <div class="hero-content">
+                            <div class="badge">About Me</div>
+                            <h2 class="hero-title">Building things that matter, one commit at a time.</h2>
+                            <h3 class="hero-role">B.Tech CSAI · IIIT Delhi · Class of 2028</h3>
+                            <p class="hero-tagline">"Code is craft. I build efficient systems, elegant interfaces, and meaningful solutions — driven by curiosity and a 250+ day LeetCode streak."</p>
+                            <div class="hero-bio">
+                                <p>Hi, I'm Aniket — a second-year Computer Science &amp; AI student at IIIT Delhi with a passion for web development, competitive programming, and embedded systems. I've interned as a Web Developer at <strong>Cohrrt</strong>, built projects in full-stack web, AI, and systems programming, and love contributing to tech communities.</p>
+                                <p>Outside coding, I captain the IIITD CSAI Volleyball team, mentor government school students, and am always learning something new. Currently exploring machine learning and AI-integrated applications.</p>
+                            </div>
+                            <div class="hero-actions">
+                                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                                <a href="#experience" class="btn btn-secondary">View Work &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE SECTION -->
+            <section id="experience" class="section experience-section scroll-reveal">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="badge">Journey</div>
+                        <h2 class="section-title">Work Experience</h2>
+                        <p class="section-subtitle">Hands-on roles that sharpened my skills in the real world.</p>
+                    </div>
+
+                    <div class="accordion-container">
+
+                        <!-- Experience Item 1: Cohrrt -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false" aria-controls="exp-panel-1" id="exp-btn-1">
+                                <div class="accordion-header-info">
+                                    <h3 class="role-title">Web Development Intern</h3>
+                                    <div class="meta-row">
+                                        <span class="company-name">Cohrrt</span>
+                                        <span class="dot-separator">&bull;</span>
+                                        <span class="duration">Mar 2026 &ndash; May 2026</span>
+                                    </div>
+                                </div>
+                                <span class="accordion-icon-wrapper">
+                                    <svg class="chevron-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                                </span>
+                            </button>
+                            <div class="accordion-panel" id="exp-panel-1" aria-labelledby="exp-btn-1" role="region">
+                                <div class="accordion-panel-content">
+                                    <ul class="experience-list">
+                                        <li>Developed and optimized <strong>15+ responsive UI components</strong> using <strong>HTML, CSS</strong>, and modern frontend practices, enhancing user experience across multiple web pages.</li>
+                                        <li>Collaborated with designers and developers to translate UI mockups into <strong>reusable frontend components</strong>, while automating <strong>3+ internal content workflows</strong> to save approximately <strong>10 hours/week</strong> of manual effort.</li>
+                                        <li>Worked within a cross-functional team of <strong>5 members</strong> to deliver frontend features, integrate updates, and maintain scalable project documentation.</li>
+                                        <li>Debugged and tested <strong>10+ interface components</strong> using browser developer tools, resolving cross-browser UI inconsistencies and improving overall product stability.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Projects Subsection inside Experience -->
+                    <div class="section-header" style="margin-top: 56px; margin-bottom: 32px;">
+                        <div class="badge">Projects</div>
+                        <h2 class="section-title">Featured Projects</h2>
+                        <p class="section-subtitle">Academic and personal projects built with real-world impact in mind.</p>
+                    </div>
+
+                    <div class="accordion-container">
+
+                        <!-- Project 1: NexusMart -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false" aria-controls="proj-panel-1" id="proj-btn-1">
+                                <div class="accordion-header-info">
+                                    <h3 class="role-title">NexusMart — E-Commerce Management System</h3>
+                                    <div class="meta-row">
+                                        <span class="company-name">React.js · Node.js · MySQL · REST APIs</span>
+                                        <span class="dot-separator">&bull;</span>
+                                        <span class="duration">Jan – Apr 2026</span>
+                                    </div>
+                                </div>
+                                <span class="accordion-icon-wrapper">
+                                    <svg class="chevron-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                                </span>
+                            </button>
+                            <div class="accordion-panel" id="proj-panel-1" aria-labelledby="proj-btn-1" role="region">
+                                <div class="accordion-panel-content">
+                                    <ul class="experience-list">
+                                        <li>Developed responsive React-based interfaces for customers, suppliers and delivery agents. Improved user experience through role-based navigation and dynamic rendering.</li>
+                                        <li>Managed <strong>100%</strong> of inventory data via <strong>15+ REST API endpoints</strong>, ensuring <strong>0%</strong> data inconsistency across real-time user dashboards.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: AI Healthcare Receptionist -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false" aria-controls="proj-panel-2" id="proj-btn-2">
+                                <div class="accordion-header-info">
+                                    <h3 class="role-title">AI Healthcare Receptionist Chatbot</h3>
+                                    <div class="meta-row">
+                                        <span class="company-name">Python · Claude API · MongoDB · Whisper</span>
+                                        <span class="dot-separator">&bull;</span>
+                                        <span class="duration">Jan – May 2025</span>
+                                    </div>
+                                </div>
+                                <span class="accordion-icon-wrapper">
+                                    <svg class="chevron-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                                </span>
+                            </button>
+                            <div class="accordion-panel" id="proj-panel-2" aria-labelledby="proj-btn-2" role="region">
+                                <div class="accordion-panel-content">
+                                    <ul class="experience-list">
+                                        <li>Processed <strong>50+ concurrent queries</strong> with <strong>92% intent recognition accuracy</strong> by fine-tuning prompts for the Claude-3.5-Sonnet API.</li>
+                                        <li>Cut patient booking time by <strong>30%</strong> through integrated voice STT/TTS; enforced <strong>100% data security compliance</strong> using AES-128 Fernet encryption.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: RISC-V Simulator -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false" aria-controls="proj-panel-3" id="proj-btn-3">
+                                <div class="accordion-header-info">
+                                    <h3 class="role-title">RISC-V 32I Assembler &amp; Simulator</h3>
+                                    <div class="meta-row">
+                                        <span class="company-name">Python · RISC-V Assembly · Bitwise Operations</span>
+                                        <span class="dot-separator">&bull;</span>
+                                        <span class="duration">Jan – Apr 2025</span>
+                                    </div>
+                                </div>
+                                <span class="accordion-icon-wrapper">
+                                    <svg class="chevron-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                                </span>
+                            </button>
+                            <div class="accordion-panel" id="proj-panel-3" aria-labelledby="proj-btn-3" role="region">
+                                <div class="accordion-panel-content">
+                                    <ul class="experience-list">
+                                        <li>Engineered a two-pass <strong>RISC-V assembler</strong> and cycle-level simulator in Python, modeling a 32-bit register file and <strong>instruction pipeline</strong> with 100% ISA coverage across 1000+ lines of assembly.</li>
+                                        <li>Validated <strong>pipeline hazard handling</strong> (branch prediction, load/store hazards) achieving <strong>100% execution accuracy</strong> across 50+ edge-case test suites.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 4: University ERP -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false" aria-controls="proj-panel-4" id="proj-btn-4">
+                                <div class="accordion-header-info">
+                                    <h3 class="role-title">University ERP Desktop Application</h3>
+                                    <div class="meta-row">
+                                        <span class="company-name">Java · Java Swing · MySQL · MVC</span>
+                                        <span class="dot-separator">&bull;</span>
+                                        <span class="duration">Aug – Nov 2025</span>
+                                    </div>
+                                </div>
+                                <span class="accordion-icon-wrapper">
+                                    <svg class="chevron-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                                </span>
+                            </button>
+                            <div class="accordion-panel" id="proj-panel-4" aria-labelledby="proj-btn-4" role="region">
+                                <div class="accordion-panel-content">
+                                    <ul class="experience-list">
+                                        <li>Engineered a robust MVC-based system supporting <strong>100+ concurrent users</strong> with a sub-<strong>200ms</strong> average response time per transaction.</li>
+                                        <li>Optimized MySQL schema to 3NF, eliminating <strong>100%</strong> of redundant data and boosting query retrieval speed by <strong>40%</strong>.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- HONORS & ACHIEVEMENTS SECTION -->
+            <section id="achievements" class="section achievements-section scroll-reveal">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="badge">Milestones</div>
+                        <h2 class="section-title">Honors &amp; Achievements</h2>
+                        <p class="section-subtitle">Recognition across academics, tech, sports, and leadership.</p>
+                    </div>
+
+                    <div class="achievements-list">
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <div class="achievement-body">
+                                <span class="achievement-date">2026</span>
+                                <h3 class="achievement-name">Amazon ML Summer School 2026</h3>
+                                <p class="achievement-description">Selected for the highly competitive Amazon ML Summer School (MLSS) program via a rigorous evaluation process — one of limited seats nationally.</p>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                            </div>
+                            <div class="achievement-body">
+                                <span class="achievement-date">2026</span>
+                                <h3 class="achievement-name">The Big Code 2026 — Google</h3>
+                                <p class="achievement-description">Ranked among the <strong>Top 1,500 students nationally</strong>, advancing to Round 2 of Google's competitive programming challenge. Maintains a 250+ day LeetCode streak with 600+ problems solved across LeetCode, HackerRank &amp; CodeChef.</p>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><path d="M12 11v6"/><path d="M9 14h6"/></svg>
+                            </div>
+                            <div class="achievement-body">
+                                <span class="achievement-date">2023</span>
+                                <h3 class="achievement-name">Eaglewise Meritorious Scholar</h3>
+                                <p class="achievement-description">Academic topper of Grades 11 &amp; 12 among 700+ students; awarded a full-merit scholarship for exceptional academic performance (93.40% in CBSE Class 12).</p>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            </div>
+                            <div class="achievement-body">
+                                <span class="achievement-date">2025</span>
+                                <h3 class="achievement-name">Electritive '25 Champion</h3>
+                                <p class="achievement-description">Secured 1st position among 50+ college teams; awarded an electronics development kit for technical excellence in engineering challenges.</p>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                            </div>
+                            <div class="achievement-body">
+                                <span class="achievement-date">2023</span>
+                                <h3 class="achievement-name">National Entrance Excellence — AIR 11 &amp; AIR 132</h3>
+                                <p class="achievement-description">Secured Category <strong>AIR 11</strong> in the ISI Admission Test and <strong>AIR 132</strong> in the IISER Aptitude Test (IAT), demonstrating elite analytical and mathematical aptitude.</p>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div class="achievement-body">
+                                <span class="achievement-date">2025</span>
+                                <h3 class="achievement-name">Sports &amp; Leadership — Captain, IIITD CSAI Volleyball</h3>
+                                <p class="achievement-description">Captained IIITD CSAI Volleyball team to <strong>1st Position in Spikewars</strong> and <strong>2nd Position in Inter-hostel '25</strong>. Also secured <strong>2nd Position</strong> in Yoga Karwaan '24.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- CERTIFICATES SECTION -->
+            <section id="certificates" class="section certificates-section scroll-reveal">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="badge">Education</div>
+                        <h2 class="section-title">Certificates</h2>
+                        <p class="section-subtitle">Verified credentials in AI, programming, and emerging technologies.</p>
+                    </div>
+
+                    <div class="certificates-grid">
+
+                        <div class="certificate-card" data-cert="edge-ai">
+                            <div class="cert-card-content">
+                                <div class="cert-meta">
+                                    <span class="cert-issuer">Coursera · Edge Impulse</span>
+                                    <span class="cert-date">2025</span>
+                                </div>
+                                <h3 class="cert-title">Edge AI for Microcontrollers</h3>
+                                <p class="cert-desc">Completed a 3-course specialization in embedded machine learning, model design for resource-constrained devices, and microcontroller-based computer vision.</p>
+                                <button class="cert-view-btn">
+                                    <span>View Details</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="certificate-card" data-cert="google-ai">
+                            <div class="cert-card-content">
+                                <div class="cert-meta">
+                                    <span class="cert-issuer">Google / Coursera</span>
+                                    <span class="cert-date">2025</span>
+                                </div>
+                                <h3 class="cert-title">Google Prompting Essentials &amp; AI Essentials</h3>
+                                <p class="cert-desc">Dual specializations focused on AI productivity, advanced prompt engineering, and responsible AI usage across real-world professional contexts.</p>
+                                <button class="cert-view-btn">
+                                    <span>View Details</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="certificate-card" data-cert="hackerrank-ps">
+                            <div class="cert-card-content">
+                                <div class="cert-meta">
+                                    <span class="cert-issuer">HackerRank</span>
+                                    <span class="cert-date">2025</span>
+                                </div>
+                                <h3 class="cert-title">Problem Solving (Intermediate)</h3>
+                                <p class="cert-desc">Validated proficiency in core data structures (HashMaps, Stacks, Queues) and the design of optimal algorithmic solutions for complex programming problems.</p>
+                                <button class="cert-view-btn">
+                                    <span>View Details</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="certificate-card" data-cert="anthropic-ai">
+                            <div class="cert-card-content">
+                                <div class="cert-meta">
+                                    <span class="cert-issuer">Anthropic</span>
+                                    <span class="cert-date">2025</span>
+                                </div>
+                                <h3 class="cert-title">AI Fluency: Framework &amp; Foundations + Claude 101</h3>
+                                <p class="cert-desc">Developed foundational knowledge in AI frameworks, large language model operations, prompting techniques, and effective interaction with Claude AI models.</p>
+                                <button class="cert-view-btn">
+                                    <span>View Details</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- SKILLS SECTION -->
+            <section id="skills" class="section skills-section scroll-reveal">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="badge">Expertise</div>
+                        <h2 class="section-title">Skills &amp; Technologies</h2>
+                        <p class="section-subtitle">From low-level systems to full-stack web development.</p>
+                    </div>
+
+                    <div class="skill-groups">
+
+                        <div class="skill-group">
+                            <h3 class="skill-group-label">Programming Languages</h3>
+                            <div class="tags-list">
+                                <span class="tag-pill">C++</span>
+                                <span class="tag-pill">Python</span>
+                                <span class="tag-pill">C</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3 class="skill-group-label">Expertise Area</h3>
+                            <div class="tags-list">
+                                <span class="tag-pill">Data Structures</span>
+                                <span class="tag-pill">Algorithm Design and Analysis</span>
+                                <span class="tag-pill">Object Oriented Programming</span>
+                                <span class="tag-pill">Competitive Programming</span>
+                                <span class="tag-pill">Computer Organisation</span>
+                                <span class="tag-pill">Digital Circuits</span>
+                                <span class="tag-pill">Embedded Systems</span>
+                                <span class="tag-pill">Operating Systems</span>
+                                <span class="tag-pill">Memory Management</span>
+                                <span class="tag-pill">Process Scheduling</span>
+                                <span class="tag-pill">Multithreading / Concurrency</span>
+                                <span class="tag-pill">Database Management Systems</span>
+                                <span class="tag-pill">SDLC</span>
+                                <span class="tag-pill">Version Control</span>
+                                <span class="tag-pill">Debugging</span>
+                                <span class="tag-pill">MySQL</span>
+                                <span class="tag-pill">MongoDB</span>
+                                <span class="tag-pill">Frontend Development</span>
+                                <span class="tag-pill">Responsive Web Design</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3 class="skill-group-label">Tools &amp; Technologies</h3>
+                            <div class="tags-list">
+                                <span class="tag-pill">Git</span>
+                                <span class="tag-pill">GitHub</span>
+                                <span class="tag-pill">Linux</span>
+                                <span class="tag-pill">VS Code</span>
+                                <span class="tag-pill">IntelliJ IDEA</span>
+                                <span class="tag-pill">Figma</span>
+                                <span class="tag-pill">LaTeX</span>
+                                <span class="tag-pill">Canva / Adobe Express</span>
+                                <span class="tag-pill">HTML</span>
+                                <span class="tag-pill">CSS</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3 class="skill-group-label">Programming Electives</h3>
+                            <div class="tags-list">
+                                <span class="tag-pill">Data Structures and Algorithms (C++)</span>
+                                <span class="tag-pill">Computer Assembly</span>
+                                <span class="tag-pill">Advanced Programming</span>
+                                <span class="tag-pill">Intro to Programming (Python)</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3 class="skill-group-label">Technical Electives</h3>
+                            <div class="tags-list">
+                                <span class="tag-pill">Signal and System</span>
+                                <span class="tag-pill">Intro to Intelligent System</span>
+                                <span class="tag-pill">Discrete Structures</span>
+                                <span class="tag-pill">Probability and Statistics</span>
+                                <span class="tag-pill">Linear Algebra</span>
+                                <span class="tag-pill">Multivariate Calculus</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="contact" class="section contact-section scroll-reveal">
+                <div class="container contact-container">
+                    <div class="contact-header-info">
+                        <div class="badge">Connect</div>
+                        <h2 class="section-title">Let's Build Something Together</h2>
+                        <p class="contact-lead">Have a project, opportunity, or just want to chat tech? I'm always open to interesting conversations and collaborations.</p>
+                        
+                        <div class="contact-details">
+                            <a href="mailto:vector.aniket@gmail.com" class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                                <span class="detail-text">vector.aniket@gmail.com</span>
+                            </a>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <span class="detail-text">Badarpur, New Delhi — 110044</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links-container">
+                            <a href="https://www.linkedin.com/in/aniketkumarrai/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            </a>
+                            <a href="https://github.com/anikura" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            </a>
+                            <a href="https://leetcode.com/u/anikura/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LeetCode Profile">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            </a>
+                            <a href="mailto:vector.aniket@gmail.com" class="social-icon-btn" aria-label="Send Email">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your message has been noted.');">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required placeholder="e.g. John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" required placeholder="e.g. john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="What would you like to talk about?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message &rarr;</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-container">
+                <p class="copyright">&copy; 2026 Aniket Kumar Rai &middot; IIIT Delhi</p>
+                <button class="back-to-top" id="back-to-top" aria-label="Scroll to top">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+                </button>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Certificate Modal — outside #app so blur doesn't affect it -->
+    <div id="cert-modal" class="cert-modal" aria-hidden="true" role="dialog">
+        <div class="cert-modal-overlay" id="modal-overlay"></div>
+        <div class="cert-modal-container">
+            <button class="cert-modal-close" id="modal-close" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="cert-modal-body">
+                <div class="cert-modal-image-placeholder">
+                    <div class="cert-image-mockup">
+                        <div class="cert-frame">
+                            <div class="cert-header">
+                                <div class="cert-badge">CERTIFICATE</div>
+                                <h4 id="modal-cert-issuer">ISSUER</h4>
+                            </div>
+                            <h3 id="modal-cert-title">Certificate Title</h3>
+                            <p class="cert-to">awarded to</p>
+                            <h2 class="cert-name">Aniket Kumar Rai</h2>
+                            <div class="cert-footer">
+                                <div class="cert-sign">
+                                    <div class="line"></div>
+                                    <span>Instructor Signature</span>
+                                </div>
+                                <div class="cert-date-verify">
+                                    <span id="modal-cert-date">2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-modal-details">
+                    <div class="badge" id="modal-badge-issuer">Credential</div>
+                    <h3 id="modal-details-title">Certificate Title</h3>
+                    <p id="modal-details-desc">Description</p>
+                    <div class="cert-skills-covered">
+                        <h4>Key Skills Mastered:</h4>
+                        <div class="skills-pills-list" id="modal-skills-list"></div>
+                    </div>
+                    <div class="cert-verification-link">
+                        <span class="label">Credential ID:</span>
+                        <code class="cred-id" id="modal-cred-id">—</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=1.6"></script>
+</body>
+</html>
