@@ -431,8 +431,8 @@ img {
 /* Desktop: grid with photo left, content right */
 .hero-top-row {
     display: grid;
-    grid-template-columns: 320px 1fr;
-    gap: 64px;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
     align-items: center;
 }
 
@@ -729,7 +729,6 @@ img {
     padding: 32px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     transition: var(--transition-smooth);
     cursor: pointer;
     position: relative;
@@ -785,7 +784,14 @@ img {
 
 .cert-desc {
     font-size: 0.9rem;
-    margin-bottom: 24px;
+    margin-bottom: 0;
+    flex: 1;
+}
+
+.cert-card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .cert-view-btn {
@@ -798,6 +804,7 @@ img {
     color: var(--accent);
     font-family: var(--font-body);
     font-size: 0.85rem;
+    margin-top: 24px;
     font-weight: 600;
     cursor: pointer;
     transition: var(--transition-smooth);
