@@ -1270,6 +1270,31 @@ a.contact-detail-item:hover .detail-text {
     box-shadow: 0 0 0 3px rgba(201, 123, 74, 0.15);
 }
 
+.form-success {
+    display: none;
+    align-items: center;
+    gap: 12px;
+    background-color: #f0faf4;
+    border: 1px solid #a8d5b5;
+    color: #2e7d4f;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-top: 8px;
+    animation: fadeInUp 0.4s ease forwards;
+}
+
+.form-success.visible {
+    display: flex;
+}
+
+.form-success svg {
+    flex-shrink: 0;
+    stroke: #2e7d4f;
+}
+
 /* ==========================================================================
    FOOTER
    ========================================================================== */

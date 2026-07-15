@@ -396,4 +396,49 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    /* ==========================================================================
+       8. CONTACT FORM — FORMSPREE INTEGRATION
+       ========================================================================== */
+    const contactForm = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const formSuccess = document.getElementById('form-success');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Loading state
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending…';
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch('https://formspree.io/f/xrenbyvw', {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    // Success — hide form fields, show success message
+                    contactForm.querySelectorAll('.form-group').forEach(g => g.style.display = 'none');
+                    submitBtn.style.display = 'none';
+                    formSuccess.classList.add('visible');
+                    contactForm.reset();
+                } else {
+                    const data = await response.json();
+                    const errorMsg = data?.errors?.map(e => e.message).join(', ') || 'Something went wrong. Please try again.';
+                    alert(errorMsg);
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Send Message →';
+                }
+            } catch (error) {
+                alert('Network error. Please check your connection and try again.');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message →';
+            }
+        });
+    }
+
 });
