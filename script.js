@@ -261,37 +261,53 @@ document.addEventListener('DOMContentLoaded', () => {
        7. CERTIFICATE DETAILED MODAL DATA & CONTROLLER
        ========================================================================== */
     const certificateData = {
-        'edge-ai': {
-            title: 'Edge AI for Microcontrollers',
-            issuer: 'Coursera · Edge Impulse',
-            date: '2025',
-            desc: 'Completed a 3-course specialization covering embedded machine learning, model design for resource-constrained microcontroller devices, and microcontroller-based computer vision using Edge Impulse tooling.',
-            skills: ['Embedded ML', 'TinyML', 'Computer Vision', 'Microcontrollers', 'Model Optimization', 'Edge Impulse'],
-            credId: 'COURSERA-EDGEAI-2025'
+        'anthropic-ai': {
+            title: 'AI Fluency: Framework & Foundations + Claude 101',
+            issuer: 'Anthropic',
+            date: 'Jul 2026',
+            desc: 'Completed two Anthropic certifications: AI Fluency covering AI frameworks, foundational concepts, and responsible AI deployment strategies; and Claude 101 focusing on core capabilities, responsible use, and effective interaction with Claude AI assistants.',
+            skills: ['Artificial Intelligence (AI)', 'AI Strategy', 'Generative AI', 'Prompt Engineering', 'Responsible AI', 'Claude AI'],
+            credId: 'ry23g4t426bq  ·  opzhweskmvyy'
         },
-        'google-ai': {
-            title: 'Google Prompting Essentials & AI Essentials',
-            issuer: 'Google / Coursera',
-            date: '2025',
-            desc: 'Dual specializations focused on AI productivity, advanced prompt engineering techniques, effective LLM interaction strategies, and responsible AI usage in professional contexts.',
-            skills: ['Prompt Engineering', 'Generative AI', 'Responsible AI', 'AI Productivity', 'LLMs', 'Workflow Automation'],
-            credId: 'GOOGLE-PE-JH27WA018AMV'
+        'edge-ai': {
+            title: 'Edge AI for Microcontrollers Specialization',
+            issuer: 'Edge Impulse / Coursera',
+            date: 'Jul 2026',
+            desc: '3-course specialization covering embedded machine learning and edge AI model design for resource-constrained devices. Completed: Edge AI Fundamentals, Introduction to Embedded Machine Learning, and Computer Vision with Embedded Machine Learning.',
+            skills: ['Embedded Machine Learning', 'Edge AI', 'TinyML', 'Computer Vision', 'Microcontrollers', 'Model Optimization', 'Edge Impulse'],
+            credId: 'QY5U6TEC72IH'
         },
         'hackerrank-ps': {
             title: 'Problem Solving (Intermediate)',
             issuer: 'HackerRank',
-            date: '2025',
-            desc: 'Validated proficiency in core data structures (HashMaps, Stacks, Queues, Linked Lists) and optimal algorithmic solution design for intermediate-level programming challenges.',
-            skills: ['Data Structures', 'Algorithms', 'HashMap / Stack / Queue', 'Problem Solving', 'C++ / Python', 'Complexity Analysis'],
-            credId: 'HACKERRANK-PS-ab4b872a6f59'
+            date: 'Jun 2026',
+            desc: 'Certificate of Accomplishment for Problem Solving (Intermediate) earned from HackerRank, verifying proficiency in data structures and algorithmic optimization.',
+            skills: ['Problem Solving', 'Data Structures', 'Algorithms', 'HashMap / Stack / Queue', 'C++ / Python', 'Complexity Analysis'],
+            credId: 'AB4B872A6F59'
         },
-        'anthropic-ai': {
-            title: 'AI Fluency: Framework & Foundations + Claude 101',
-            issuer: 'Anthropic',
-            date: '2025',
-            desc: 'Foundational knowledge in AI frameworks, large language model operations, prompting techniques, responsible AI principles, and effective interaction strategies with Claude AI models.',
-            skills: ['LLM Operations', 'Prompt Design', 'Claude API', 'AI Frameworks', 'Responsible AI', 'AI Foundations'],
-            credId: 'ANTHROPIC-CLAUDE101-2025'
+        'google-prompting': {
+            title: 'Google Prompting Essentials Specialization',
+            issuer: 'Google / Coursera',
+            date: 'Jun 2026',
+            desc: 'Successfully completed the Google Prompting Essentials specialization, building advanced AI prompting skills. Proficient in designing effective prompts and applying techniques to handle complex analytical tasks, data analysis, and document summarization.',
+            skills: ['Prompt Engineering', 'Artificial Intelligence (AI)', 'Generative AI', 'Workflow Automation', 'LLMs', 'Data Analysis'],
+            credId: 'JH27WA018AMV'
+        },
+        'google-ai-essentials': {
+            title: 'Google AI Essentials Specialization',
+            issuer: 'Google / Coursera',
+            date: 'Jun 2026',
+            desc: 'Successfully completed the Google AI Essentials specialization covering AI productivity, prompt engineering, responsible AI usage, and strategies to stay ahead in the evolving AI landscape with hands-on practice.',
+            skills: ['Artificial Intelligence (AI)', 'Prompt Engineering', 'Responsible AI', 'AI Productivity', 'Generative AI', 'Workflow Optimization'],
+            credId: 'QAGXXACNH18E'
+        },
+        'git-github': {
+            title: 'Git & GitHub Masterclass',
+            issuer: 'WsCube Tech',
+            date: 'Dec 2025',
+            desc: 'Completed the Git & GitHub Masterclass from WsCube Tech. Gained expertise in version control systems, repository management, branching strategies, and collaborative software development workflows.',
+            skills: ['GitHub', 'Git', 'Version Control', 'Branching Strategies', 'Repository Management', 'Collaboration'],
+            credId: '—'
         }
     };
 
